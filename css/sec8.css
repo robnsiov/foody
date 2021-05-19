@@ -1,0 +1,108 @@
+.items-percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    background-color: #FFF2EF;
+}
+.items-percent .itemBx {
+    position: relative;
+    padding: 50px 0;
+    width: 250px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #1E1D1E;
+}
+@media (max-width:740px) {
+    .itemBx {
+        flex-grow: 1 !important;
+    }
+    .items-percent {
+        padding: 15px 15px !important;
+    }
+}
+.itemBx .half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.cicle-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+.items-percent p {
+    color: #464446;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 10;
+}
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+}
+svg circle {
+    position: relative !important;
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke: #201F20;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    transition: .3s;
+}
+svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #1A191B;
+}
+.itemBx:nth-child(1) svg circle:nth-child(2) {
+    stroke: #cb23d1;
+}
+.itemBx:nth-child(2) svg circle:nth-child(2) {
+    stroke: #00FE42;
+}
+.itemBx:nth-child(3) svg circle:nth-child(2) {
+    stroke: #149FF8;
+}
+svg circle:hover {
+    stroke-width: 5;
+}
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #464446;
+    font-weight: bold;
+    z-index: 100;
+}
+.number .percent {
+    font-size: 32px;
+}
+.number .percent span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.itemBx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

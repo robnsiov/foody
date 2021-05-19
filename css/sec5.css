@@ -1,0 +1,135 @@
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 10px;
+    background-color: #FFF2EF;
+}
+.form, .order-logo {
+    width: 460px;
+    height: 550px;
+}
+.form {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.form h2 {
+    font-size: 26px;
+    color: #EC984F;
+}
+.form .food-icons {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.food-icons span {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+.food-icons span:nth-child(1){
+    background: url(../images/53dfba9191d318106b7714b74fb9e3eb.png);
+    background-position: center !important;
+}
+.food-icons span:nth-child(2){
+    background: url(../images/57a4d2fbcf28e3159a2ee14ac8982a86\ \(1\).png);
+    background-position: 50%;
+}
+.food-icons span:nth-child(3){
+    background: url(../images/images.png);
+}
+
+.food-icons span:nth-child(4){
+    background: url(../images/kawaii-cute-pizza-icon-mascot-illustration_136610-702.jpg);
+}
+
+.form .fill {
+    color: #667377;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.form form {
+    width: 100%;
+    height: 300px;
+}
+form .main-input {
+    width: 100%;
+    padding: 17px 15px;
+    outline: none;
+    border: none;
+    border: 1px solid #DCDFE0;
+    border-radius: 5px;
+    background-color: #F7F8F9;
+    font-weight: bold;
+    color: #EC984F;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.main-input::placeholder {
+    color: #c7c7c7;
+}
+.last-main {
+    margin-bottom: 0 !important; 
+}
+.form-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-btns input {
+    outline: none;
+    border: none;
+    width: calc(100% - 10px);
+    height: 45px;
+    border-radius: 5px;
+    background-color: #FFCD00;
+    color: white;
+}
+.form-btns input:nth-child(1) {
+    margin-right: 5px;
+}
+.form-btns input:nth-child(2) {
+    margin-left: 5px;
+}
+.privacy {
+    width: 100%;
+}
+.privacy p {
+    color: #667377;
+    margin: 12px 0 12px 0 ;
+}
+
+.order-logo {
+    background: url(../images/18514975.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width:919px) {
+    .order-logo {
+        display: none;
+    }
+}
+@media (max-width:550px) {
+    .form {
+        padding: 10px !important;
+        justify-content: flex-start !important;
+        height: unset !important;
+    }
+    .fill {
+        margin: 10px 0 !important;
+    }
+}

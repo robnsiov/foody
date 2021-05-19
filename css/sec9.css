@@ -1,0 +1,59 @@
+.chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    padding: 10px 20px;
+    background-color: #FFF2EF;
+}
+.chefs .chef {
+    flex-basis: calc(33.33% - 30px);
+    margin: 2% 15px;
+    background: url(../images/20287026.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    flex-grow: 1;
+}
+.chef .chef-logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: url(../images/baker.png);
+    background-size: cover !important;
+    background-color: #DA0095 !important;
+    transition: 0.3s;
+}
+.chef-logo:hover {
+    border-radius: 15%;
+}
+.chef:nth-child(2) .chef-logo {
+    background: url(../images/chef.png);
+}
+.chef:nth-child(3) .chef-logo {
+    background: url(../images/cooking.png);
+}
+.chef h2 {
+    margin: 15px 0 7.5px 0;
+    color: #DA0095;
+    border-bottom: 2px solid #DA0095;
+    padding-bottom: 7.5px;
+}
+.chef span {
+    color: #DA0095;
+}
+
+@media (max-width:991px) {
+    .chef {
+        flex-basis: calc(50% - 30px) !important;
+    }
+}
+@media (max-width:640px) {
+    .chef {
+        flex-basis: 100% !important;
+    }
+}

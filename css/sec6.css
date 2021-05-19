@@ -1,0 +1,105 @@
+.heading{
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+    background-color: #FFF2EF;
+}
+.heading span{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    color:var(--red);
+    color: #352D49;
+}
+.heading::before  {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f0cac5;
+    transform: scaleX(1);
+}
+.heading span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e96b5a;
+    transform: scaleX(0.15);
+    transition: 0.5s;
+}
+.heading span:hover::after {
+    transform: scaleX(1);
+}
+
+.dish{
+    min-height: 100vh;
+    padding: 3px 2%;
+    background-color: #FFF2EF;
+}
+.dish .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:10px 0;
+    list-style: none;
+}
+.dish .controls .buttons{
+    margin: 15px;
+    padding: 5px 0;
+    border-bottom: 2px solid #e96b5a;
+    color: #352D49;
+    cursor: pointer;
+    font-size: 22px;
+}
+.dish .controls .buttons.button-active,
+.dish .controls .buttons:hover{
+    color: #752a62;
+    border-color: #752a62;
+}
+.dish .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+.dish .image-container .image{
+    width: calc(25% - 20px);
+    margin:10px 10px;
+}
+.dish .image-container .image img{
+    height: 200;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.dish .image-container .image a:hover{
+    color:var(--red);
+    text-decoration: underline;
+}
+
+@media (max-width:991px) {
+    .image {
+        flex-basis: calc(33.33% - 30px) !important;
+    }   
+}
+@media (max-width:780px) {
+    .image {
+        flex-basis: calc(50% - 30px) !important;
+    }   
+}
+@media (max-width:620px) {
+    .image {
+        flex-basis: 100% !important;
+    }   
+}

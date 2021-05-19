@@ -1,0 +1,317 @@
+body {
+    background-color: #FFF4F2;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.logo {
+    width: 15%;
+}
+.packed {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+.menu {
+    display: flex;
+}
+.register, .login {
+    display: none;
+}
+.toggle {
+    display: none;
+}
+.packed i {
+    display: none;
+}
+@media (max-width:991px) {
+    header, .sticky {
+        padding: 10px 25px !important;
+    }
+    .register, .login {
+        display: inline-block !important;
+    }
+    .packed {
+        position: fixed !important;
+        top: 0 !important;
+        left: -120% !important;
+        width: 317px !important;
+        height: 100% !important;
+        background-color: rgb(255, 227, 227) !important;
+        flex-direction: column !important;
+        padding: 0 !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        font-size: 20px !important;
+        padding: 20px 30px !important;
+        transition: 0.5s;
+    }
+    .search-item {
+        order: -1;
+    }
+    .search-item input, .search-item, .search-item::before {
+        border-radius: 3px !important;
+        margin-bottom: 10px;
+    }
+    .menu {
+        flex-direction: column !important;
+        width: 100%;
+        height: 80vh;
+        justify-content: space-between !important;
+    }
+    .register, 
+    .login {
+        display: inline-block !important;
+        margin: 0 !important; 
+        background-color: #ffd6e0;
+        padding: 10px 69px;
+        text-align: center;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .register:hover, 
+    .login:hover {
+        background-color: #f5a1b6;
+    }
+    .logo {
+        margin-right: 100px !important;
+        top: 0 !important;
+    }
+    .toggle {
+        display: block !important;
+    }
+    .toggle {
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+    }
+    .toggle i {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: #352D49;
+        text-align: center;
+        line-height: 30px;
+        font-size: 32px;
+    }
+    .toggle:hover {
+        transform: scale(1.1);
+    }
+    .change {
+        left: 0 !important;
+        transition: 0.5s;
+    }
+    .packed i {
+        order: -1;
+        display: inline-block;
+        margin: 5px 0 10px -15px;
+        color: #352D49;
+        transition: 0.3s;
+    }
+    .packed i:hover {
+        transform: scale(1.1);
+    }
+    .menu li a::before {
+        display: none;
+    }
+    .logo {
+        transition: 0.3s !important;
+    }
+    .change-logo {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        transition: 0.3s;
+    }
+
+}
+@media (max-width:460px) {
+    header {
+        padding: 25px 25px !important;
+    }
+    .profile {
+        font-size: 22px !important;
+    }
+    .logo {
+        margin-right: 70px !important;
+    }
+}
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+.menu li a {
+    position: relative;
+    color: #352D49;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.menu li a:hover {
+    color: #FBD8A9;
+}.menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(#FBD8A9, #e7b572);
+    border-radius: 50%;
+    box-shadow: 0 0 3px #f5a1b6;
+    opacity: 0;
+    transition: 0.3s;
+}
+.menu li a:hover:before{
+    bottom: -17px;
+    opacity: 1;
+}
+.search-item {
+    position: relative;
+    width: 260px;
+    z-index: 10;
+    border-radius: 20px;
+}
+.search-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 128, 114, 0.2);
+    transform: scaleY(1.1) scaleX(1.02) ;
+    border-radius: 20px;
+    z-index: -10;
+    opacity: 1;
+    transform: 0.3s;
+}
+.search-item::before {
+    opacity: var(--check);
+    transition: 0.3s;
+}
+.search-item input {
+    width: 100%;
+    padding: 12px 50px 12px 40px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #352D49;
+}
+
+.search-item .serach-img,
+.search-item .user-cart {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/loupe\ \(3\).png);
+    background-size: cover !important;
+    z-index: 10;
+}
+.search-item .user-cart {
+    width: 25px;
+    height: 25px;
+    left: unset;
+    right: 10px;
+    background: url(../images/trolley.png);
+}
+.user-cart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 2px;
+    height: 100%;
+    background-color: #352D49;
+}
+.logo {
+    top: -5px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(#FF8290, #F8C27F);
+    border-radius: 50%;
+}
+.logo span:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+.logo .profile {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: #352D49;
+    transition: 0.3s;
+}
+.profile:hover {
+    color: #e7b572;
+    cursor: pointer;
+}
+.logo::before, .logo::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 15px;
+    background: #F8C27F;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: -10;
+}
+.logo::after {
+    right: unset;
+    bottom: unset;
+    top: 3px;
+    left: 0;
+    background: #FF8290;
+    transform: scale(0.8) rotate(-45deg);
+}
+.leaf {
+    position: absolute;
+    top: -28px;
+    left: 6px;
+    width: 20px;
+    height: 35px;
+    background-image: linear-gradient(to top left, #FF8290 49%, transparent 49.5%, transparent 51%, #F8C27F 51%);
+    border-radius: 100% 0 /50px 0px;
+    transform: rotate(40deg) scale(0.7);
+}
+.sticky {
+    background-color: rgb(163, 163, 163);
+    transition: 0.3s;
+    padding: 10px 25px;
+}
+.dark-sticky {
+    background-color: #393349 !important;
+}
+.changeOp {
+    opacity: 0 !important;
+}

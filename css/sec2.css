@@ -1,0 +1,130 @@
+.go-to-light {
+    color: #FFF2EF !important;
+}
+.imr {
+    background-color: #d4421e !important;
+}
+body {
+    position: relative;
+}
+.dark {
+    background-color: #352D49 !important;
+}
+.darky {
+    background-color: #43395c !important;
+}
+.light-cloro{
+    color: #FFF2EF !important;
+}
+.cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #006eff;
+    box-shadow: 0 0 10px #006eff,
+    inset 0 0 10px #006eff;
+    z-index: 100000;
+    animation: cursor 1s ease-in-out infinite alternate;
+}
+@keyframes cursor {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.our-speciality {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 2%;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    background-color: #FFF2EF;
+}
+.our-speciality .food-box {
+    position: relative;
+    flex-basis: calc(33.33% - 15px);
+    margin: 4px 7.5px;
+    flex-grow: 1;
+}
+.food-box img {
+    width: 100%;
+}
+.food-box-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.food-box-desc h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Itim' !important;
+}
+.food-box-desc p {
+    margin: 20px 0; 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+    background-color: #d4421e;
+    font-family: 'Itim' !important;
+}
+.images-title h2  {
+    position: relative;
+    text-align: center;
+    color: #352D49;
+    font-size: 32px;
+    background-color: #FFF2EF;
+    padding-bottom: 15px;
+}
+.images-title h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #f0cac5;
+    transform: scaleX(0.8);
+}
+.images-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #e96b5a;
+    transform: scaleX(0.15);
+    transition: 0.5s;
+}
+.images-title h2:hover::after {
+    transform: scaleX(0.8);
+}
+.food-box-desc a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 10;
+    margin-top: 10px;
+    transition: 0.3s;
+    border: 2px solid #fff;
+    outline: 2px solid #fff;
+    outline-offset: -8px;
+    font-family: 'Itim' !important;
+}

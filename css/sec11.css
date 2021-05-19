@@ -1,0 +1,33 @@
+.advantages {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+.dis{
+    display: none !important;
+}
+.newasvan {
+    background: linear-gradient(#FFF2EF ,#fff);
+}
+.advantages .item {
+    width: 300px;
+    margin: 10px ;
+    padding: 10px;
+    text-align: center;
+}
+.item i {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #FF8C8D;
+}
+.item h2 {
+    color: #544B63;
+    margin: 20px 0 10px 0 ;
+}
+.item p {
+    color: #544B63;
+}

@@ -1,0 +1,76 @@
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 10px 2%;
+    background-color: #FFF2EF;
+}
+.options p {
+    color: #352D49;
+}
+.option-item {
+    flex-basis: 350px;
+}
+.option-item:nth-child(1){
+    flex-basis: 450px;
+}
+.op-midd{
+    min-width: 350px !important;
+    background-color: #F3EEED;
+    height: 350px;
+    border-radius: 50%;
+    transform: scale(1.16);
+}
+.active-op {
+    border: 15px solid #FFF2EF;
+}
+.active-op {
+    border: 15px solid #352D49;
+}
+.op-last{
+    flex-basis: 450px;
+}
+.option {
+    width: 110%;
+    padding: 20px 40px;
+    padding-right: 75px;
+    background-color: #F3EEED;
+    border-radius: 35px 0 0 35px;
+    color: #352D49;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.op-last .option {
+    padding-right: 40px;
+    padding-left: 75px;
+    border-radius: 0 35px 35px 0;
+}
+.option-item .op-midd{
+    margin: 35px 0;
+}
+.op-midd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.header-op {
+    width: 100px;
+    height: 100px;
+    background: url(../images/radar.png);
+    background-size: cover;
+    margin-bottom: 15px;
+}
+.op-midd p {
+    text-align: center;
+    margin-top: 15px;
+    color: #352D49;
+}
+@media (max-width:920px) {
+    .options {
+        display: none !important;
+    }
+
+}

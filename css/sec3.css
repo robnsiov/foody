@@ -1,0 +1,38 @@
+.food-box-desc a:hover {
+    outline-offset: 6px;
+    background-color: #E84118;
+}
+@media (max-width:1100px) {
+    .food-box {
+        flex-basis: calc(50% - 15px) !important;
+    }
+}
+@media (max-width:650px) {
+    .food-box {
+        flex-basis: 100% !important;
+    }
+}
+@media (max-width:360px) {
+    .food-box-desc {
+        padding: 5px !important;
+    }
+    .food-box-desc h2 {
+        font-size: 26px !important;
+    }
+    .food-box-desc p {
+        font-size: 16px !important;
+        margin: 10px 0 !important;
+    }
+    .food-box-desc a {
+        padding: 10px 20px !important;
+    }
+}
+@media (max-width:246px) {
+    .food-box-desc {
+        display: none !important;
+    }
+
+}
+::-webkit-scrollbar {
+    width: 2px;
+}

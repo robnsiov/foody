@@ -1,0 +1,240 @@
+.submit-email {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    min-height: 70vh;
+    overflow: hidden;
+    background-color: #FFF2EF;
+}
+.submit-box {
+    width: 500px;
+    padding: 15px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 10;
+}
+.submit-box .submit-close {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/cancel.png);
+    background-size: cover;
+    align-self: flex-end;
+    font-family: 'Itim';
+    transition: 0.3s;
+}
+.submit-close:hover {
+    transform: scale(1.2);
+}
+.submit-box h2 {
+    color: white;
+    margin-top: 10px;
+    font-family: 'Itim';
+}
+.submit-box h2 span {
+    font-family: 'Itim';
+    font-size: 18px !important;
+}
+.submit-box .submit-desc {
+    text-align: center;
+    color: grey;
+    margin: 20px 0 20px 0;
+    font-family: 'Itim';
+}
+.submit-box form {
+    position: relative;
+    width: 85%;
+    font-family: 'Itim';
+}
+.check-box {
+    margin-right: 6px;
+}
+.check-desc {
+    display: inline-block;
+}
+.select {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.submit-box form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 20px 45px;
+    font-size: 18px;
+    background-color: rgb(22, 22, 22);
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-family: 'Itim';
+}
+.submit-box form .link-logo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/link.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+#select {
+    display: none;
+}
+.submit-box .select {
+    display: flex;
+    margin: 20px 0;
+    color: grey;
+    font-family: 'Itim';
+    text-align-last: center ;
+}
+
+.sumbit-it {
+    color: grey;
+    font-size: 3rem;
+    font-family: 'Itim';
+}
+.submit-box a, .submit-others a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 17px 30px;
+    border-radius: 20px;
+    background-color: #F55A2E;
+    font-weight: bold;
+    font-family: 'Itim';
+    padding-right: 45px;
+    transition: 0.2s;
+}
+.submit-email a:hover {
+    color: grey;
+    background-color: rgb(22, 22, 22);
+
+}
+.check-desc {
+    font-family: 'Itim';
+}
+.submit-others a {
+    font-family: unset;
+}
+.submit-email a span {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: url(../images/add.png);
+    background-size: cover;
+}
+.submit-others {
+    width: 350px;
+    padding: 10px;
+    z-index: 10;
+}
+.submit-others .f-submit {
+    color: #F55A2E;
+    font-size: 36px;
+}
+.submit-others .insp  {
+    color: #352D49;
+    font-size: 36px;
+}
+.submit-others p {
+    margin: 15px 0;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.submit-email .submit-logo {
+    position: absolute;
+    top: -10%;
+    left: 13%;
+    transform: translateX(-50%) rotate(90deg);
+    width: 900px;
+}
+.submit-logo img {
+    width: 100%;
+}
+.check-box {
+    position: relative;
+    display: inline-block;
+    min-width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 2px solid rgb(201, 201, 201);
+}
+.check-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #313131;
+    border-radius: 50%;
+    display: none;
+}
+.check-box.allgone:after {
+    display: inline-block;
+}
+@media (max-width:1250px) {
+    .submit-email {
+        flex-direction: column !important;
+        padding: 10px 50px !important;
+    }
+    .submit-box, .submit-others {
+        width: 100%;
+    }
+    .submit-others {
+        text-align: center;
+        margin-top: 25px;
+    }
+    .submit-others .f-submit {
+        color: #352D49;
+    }
+    .submit-others p {
+        padding: 0 !important; 
+    }
+}
+@media (max-width:550px) {
+    .submit-email {
+        padding: 10px !important;
+    }
+    .submit-box {
+        border-radius: 5px !important;
+    }
+    .sumbit-it {
+        font-size: 6.5vw !important;
+    }
+    .submit-box form {
+        width: 100% !important;
+    }
+    .submit-box form input {
+        border-radius: 5px !important;
+        padding-right: 5px !important;
+    }
+    .submit-email a {
+        border-radius: 5px !important;
+    }
+    .submit-others a {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .submit-box form input {
+        font-size: 16px !important;
+    }
+    .submit-others p {
+        font-size: 16px !important;
+    }
+}
